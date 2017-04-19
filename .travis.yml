@@ -23,16 +23,10 @@ script:
 # - protractor config/protractor.js
 - gulp
 - cd dist
-before_deploy:
-- git init
-- heroku git:remote -a weatherconditions
-- git add .
-- git commit -am "make it better"
-- git push heroku master
 deploy:
   provider: heroku
   api_key:
     secure: FHqpAfUTsPr5eGaGm/HzSN/JwNf9aOOh7fLJgWhJIt04KPMSD3923mV4bTVHCDiADH4AKKLZLbEkP/HTYC0JOyz68rEvhQgURCntFTs8E3kVmO5BtttVcNdyb7/uHfGbFNco1VRdvBbTPIb868SjpDmMZL8Furk0nKkFRI65k6gXLx6Tip2NxR+HfMNlnXkJyP5cW4woLYwoX8oo7K4KfFfoJwuXBQI/gx9tzgVTkIYatkxRIr7e4i7CC0utlzPzm/kbq3iFkRwO32hCxuCPEhzk6l37CLkSWWdroSoAO7EvDrwsyy4X5qaXLuJpXcg1BpJjbbJBzyr/cZ2K0o0+bC7Vg/6IXIiZAuDnJe2X7khrb+++IuZKT4d3IA1Qjo2wlec0TN3K2b16BLYI+3rAVUd7C7R+MfJsJF6OcadolWlavbpi+7pjgnCtpj9Yfx5LZcd8GbtK94HwhKLRmZWJND0gGGT0HITQ7Sad0o4mciHethEfnJk9GyGnXWiU0YyPSdh/5vy3LCLOXtwohUNy6y4O/IwxMDo/++tUFa7vYxmrO2W1lXmFqLg5hKiXzkqFhhgWwWF10PWp85yJTzZ+5Ywb6G1Tc9XTHRwFp0reECv5q7bOO1Mq6HyP6aOyWAArPoByzLn5hkZxoMkjhDCo758tJtTjOIR4qNC717B0khw=
   app: weatherconditions
-  on:
-    repo: dhiegohenrique/exercise3-node
+  # on:
+  #   repo: dhiegohenrique/exercise3-node
