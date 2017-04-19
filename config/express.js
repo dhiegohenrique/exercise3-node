@@ -28,8 +28,6 @@ module.exports = function() {
 
     app.get("*", function(req, res) {
         res.status(404).render("404");
-        // res.render("../public/views/404.html");
-        // res.render("../views/404.html");
     });
 
     return app;
