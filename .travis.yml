@@ -30,7 +30,7 @@ before_deploy:
 # - git checkout $TRAVIS_BRANCHKC
 - git add .
 - git commit -am "Travis commit"
-# -git push origin master
+- git push origin master
 deploy:
   provider: heroku
   api_key:
