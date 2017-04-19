@@ -1,7 +1,5 @@
 module.exports = {
     env: "production",
-    clientID: process.env.CLIENT_ID,
-    clientSecret: process.env.CLIENT_SECRET,
     port: process.env.PORT,
     address: process.env.APP_NAME + ".herokuapp.com",
     domain: process.env.APP_NAME + ".herokuapp.com",

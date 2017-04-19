@@ -9,5 +9,5 @@ exports.config = {
         'build': config.travisBuild
     },
 
-    specs: ['../test/e2e/**/*Spec.js'],
+    specs: ['../test/e2e/**/*Spec.js']
 };

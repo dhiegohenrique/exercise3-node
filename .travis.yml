@@ -6,8 +6,8 @@ notifications:
 env:
   global:
   - NODE_ENV: test
-# addons:
-#   sauce_connect: true
+addons:
+  sauce_connect: true
 before_install:
 - npm install -g bower@1.8.0
 - npm install -g gulp@3.9.1
@@ -22,7 +22,9 @@ before_script:
 - sleep 10
 script:
 - karma start config/karma.config.js --single-run --browsers PhantomJS
-# - protractor config/protractor.js
+- protractor config/protractor.js
+- gulp
+- cd dist
 # before_deploy:
 # - git config --global user.email 'travis@travis-ci.com'
 # - git config --global user.name 'Travis CI'
