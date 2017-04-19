@@ -11,7 +11,7 @@ env:
 before_install:
 - npm install -g bower@1.8.0
 - npm install -g gulp@3.9.1
-- npm install -g karma-cli@1.6.0
+- npm install -g karma-cli
 - npm install -g protractor@5.1.1
 - webdriver-manager update
 - bower install
