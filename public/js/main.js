@@ -1,0 +1,11 @@
+angular.module("weatherapp", 
+        [
+            "pascalprecht.translate", 
+            "ngSanitize", 
+            "meusComponentes", 
+            "ngMap", 
+            "angularMoment",
+            "ui.bootstrap",
+            "ui.router"
+        ]
+);

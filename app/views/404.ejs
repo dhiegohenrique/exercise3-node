@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{{'title' | translate}}</title>
+        <meta name="viewport" content="width=device-width">
+        <!-- build:css -->
+        <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="resources/css/style.css">
+        <link rel="stylesheet" href="resources/css/owfont-regular.min.css">
+        <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+        <!-- endbuild -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    </head>
+
+    <body class="body">
+        <div class="container">
+            <div class="row jumbotron title shadow-5" style="background: url('resources/chuva-forte.png')">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <h2 class="text-center" translate="pageNotFound"></h2>
+
+                    <br/><br/><br/>
+                    <h4 class="text-center" translate="pageNotFoundMessage"></h4>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                    <a href="/" class="btn btn-large btn-info vertical-align-middle">
+                        <i class="fa fa-home fa-4x" aria-hidden="true"></i>
+                        <span>
+                              {{'goHomePage' | translate}}
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- build:js -->
+        <script src="vendor/jquery/dist/jquery.min.js"></script>
+        <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="vendor/angular/angular.min.js"></script>
+        <script src="vendor/angular-ui-router/release/angular-ui-router.min.js"></script>
+        <script src="vendor/angular-sanitize/angular-sanitize.min.js"></script>
+        <script src="vendor/angular-translate/angular-translate.min.js"></script>
+        <script src="vendor/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
+        <script src="vendor/angular-bootstrap/ui-bootstrap.min.js"></script>
+        <script src="vendor/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/config/languageConfig.js"></script>
+        <script src="js/controllers/weatherController.js"></script>
+        <script src="js/controllers/errorMessageController.js"></script>
+        <script src="js/controllers/resultController.js"></script>
+        <script src="js/services/weatherService.js"></script>
+        <script src="js/services/translateService.js"></script>
+        <script src="js/services/loadingService.js"></script>
+        <script src="js/directives/directives.js"></script>
+        <script src="js/config/interceptorsConfig.js"></script>
+        <script src="js/config/templatesConfig.js"></script>
+        <script src="js/interceptors/loadingInterceptor.js"></script>
+        <script src="js/interceptors/errorInterceptor.js"></script>
+        <script src="js/state/weatherState.js"></script>
+        <script src="vendor/ngmap/build/scripts/ng-map.min.js"></script>
+        <script src="vendor/moment/min/moment.min.js"></script>
+        <script src="vendor/moment/locale/pt-br.js"></script>
+        <script src="vendor/moment/locale/es.js"></script>
+        <script src="vendor/moment/locale/en-au.js"></script>
+        <script src="vendor/angular-moment/angular-moment.min.js"></script>
+        <!-- endbuild -->
+        <script src="http://maps.google.com/maps/api/js?key=AIzaSyDkdIP05cgGoOTtSJKIiXYJqfzjV9BCCnE"></script>
+  
+    </body>
+</html>
