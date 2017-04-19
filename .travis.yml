@@ -25,7 +25,10 @@ script:
 - cd dist
 before_deploy:
 - git init
-- git add .
+- git config --global user.email 'travis@travis-ci.com'
+- git config --global user.name 'Travis CI'
+# - git checkout $TRAVIS_BRANCHKC
+- git add --all
 - git commit -am "Travis commit"
 deploy:
   provider: heroku
