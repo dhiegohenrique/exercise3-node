@@ -23,8 +23,7 @@ script:
 #- cd dist
 deploy:
   provider: heroku
-  api_key:
-    secure: wR2WZFo/UN8LUHtodN3Zi337F1osXr6JZj4XP33BrNq4Vzw7RBGiu8W4QKXBYge7lZDZyzIYKK1SZJMbtQyw5QKRH48+mo96vZJS2uM9gxNsWi60nznPhlDy5qgk845XRLh97swYRaIFivMdsSSo8i3la80zzyxFZBjiP/NShZSlxAPPzVB4KRSm0eBTfLRUmvJbjsB2hmkaN4SktJ1mFIHLIG2s1xsWOb5T9tGhY3il+xZd+cS9FfhHrYKnEzdHwIqagaKzZF3XINCjExkwjsb+LBO4nAcuS6jrO4Qe+37bEbtB7x3pIpJi6j3bLLfqOmCuido5wNUIL+y/CJ4aIQ9v2Gpu2qyARtA1qi3QuWhWMj0aVLjH72PzWnlBNYG+IrITacEPsayxORN2pZbl+AmQs3EjRXDXVfF52fxjkC7W+RFrZJ2pOUzD5ZbhYiXKf0cBg91dQeoYEpITL7to18pQ/D/DoaoxL5JOVdRJlwnyvfXrh8Qe9/4/lf/YV/ZQuCfWhL3X0jemaX24j3xNtYpnvRNS9/DEYRURoEES/0DAgLy1/iZJ/9ILhQq9Y14Dz8WZHGFGphlv9JQqlcgfn48Gt93JjTtxFbHP1CAZZ1EGyk7NvCIXx7ZOa0/lBjwiV6US8c40T+CA31qi1Q4vkzxmpC/djHo+cCCHinemyTg=
+  api_key: 5ef56961-7ec5-41ae-84e3-937a2caa4e8d
   app: weatherconditions
   #file: 'dist/*'
   #file_glob: true
