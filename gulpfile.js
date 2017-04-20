@@ -9,6 +9,7 @@ var jsonMinify = require('gulp-json-minify');
 var gulpCopy = require('gulp-copy');
 var ngAnnotate = require('gulp-ng-annotate');
 var htmlreplace = require('gulp-html-replace');
+var deploySlug = require('gulp-heroku-deploy-slug');
 
 gulp.task('clean', function () {
 	return gulp.src('dist')
@@ -108,7 +109,7 @@ gulp.task('copyProject', function() {
         'app/**',
         '!**/app/views/**',
         'config/**',
-        // 'node_modules/**',
+        'node_modules/**',
         'script/**',
         'test/**',
         '.bowerrc',
@@ -121,6 +122,18 @@ gulp.task('copyProject', function() {
 
     return gulp.src(sources)
         .pipe(gulpCopy('dist', { prefix: 0 }));
+});
+
+gulp.task('deploy', function() {
+    return gulp.src('dist') // Or get it some other way 
+        .pipe(deploySlug({
+            app: 'weatherconditions'//,
+            // slug: {
+            //     process_types: {
+            //         web: 'node-v0.10.20-linux-x64/bin/node web.js'
+            //     }
+            //     }
+        }));
 });
 
 

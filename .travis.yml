@@ -25,5 +25,6 @@ deploy:
   api_key:
     secure: T5gxg5wfKhX2mvjvdi8MEWnEyEWObXaYGScM+X057LLF2jV3nldz2BRC4S2TrhnC43jl92urtFUqs4z3emyIaPf6uJ6kyhE4x0aiab4ek8UC0891hL24qCoXkUYlgVZvGCqkI4VrQoWMJJ9FMjbD0J49ShusSRRVHzAB/qmzeZLcJQObKCzFTYCHUsNFhDI+OZyx+bOKCzNfUW4qymBu07iN1mmPfudsrS8BrZnEWHaEs3OqZgIbYCCKHIA1Elr5iAwuLrqh4dKYalch9FmvclFNI+LVuNilQ92LDhejucQ86YwGL3A3SzBzlpd2ldW0rPkQ58SpvqnCjR0I2zrkTBqcmRLwcM6ubbHGrhY9SHSuKR3gA4qA59P7Ybrin3mTgoFmHH25WfP7e5hhZ0fQVE2o71AYtOrn257RsW04S7Z0V6JuI+iVoyaqj8RamZjtlpppSm6obxz+WZC360pb55KHjG4g1vot9zoWG62FvIinw3UxzrkKI7oEQ3Y/o/mCosN/YX0MyscJR2GZXn3OJ0gVXnHplT2H0c22PRondWr/cYGKcWVCrrMwXvT/zWYtbvQ7EwyBxzbQCkE2VWttJ+Som9ly7vdH4wqf2rHvYgvQ80w9WUtshOzb2MRU1PsNSFflHoVyTqrJq3jhIjmfx5ZKlmhuXd8Z140nePQJ4fs=
   app: weatherconditions
-  on:
-    repo: dhiegohenrique/exercise3-node
+  file: 'dist/*'
+  # on:
+  #   repo: dhiegohenrique/exercise3-node
