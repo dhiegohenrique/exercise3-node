@@ -125,6 +125,8 @@ gulp.task('copyProject', function() {
 });
 
 gulp.task('deploy', function() {
+    console.log("iniciando deploy");
+
     return gulp.src('dist') // Or get it some other way 
         .pipe(deploySlug({
             app: 'weatherconditions'//,
