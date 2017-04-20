@@ -16,6 +16,8 @@ before_install:
 - webdriver-manager update
 - bower install
 before_script:
+- gulp
+- cd dist
 - node server &
 - sleep 10
 script:

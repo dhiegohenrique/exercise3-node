@@ -17,7 +17,6 @@ gulp.task('clean', function () {
 
 gulp.task('uglify', function() {
     var sources = [
-        'public/js/**/*.js',
         'public/vendor/jquery/dist/jquery.min.js',
         'public/vendor/bootstrap/dist/js/bootstrap.min.js',
         'public/vendor/angular/angular.min.js',
@@ -32,7 +31,8 @@ gulp.task('uglify', function() {
         'public/vendor/moment/locale/pt-br.js',
         'public/vendor/moment/locale/es.js',
         'public/vendor/moment/locale/en-au.js',
-        'public/vendor/angular-moment/angular-moment.min.js'
+        'public/vendor/angular-moment/angular-moment.min.js',
+        'public/js/**/*.js'
         ];
 
     return gulp.src(sources)
@@ -108,13 +108,14 @@ gulp.task('copyProject', function() {
         'app/**',
         '!**/app/views/**',
         'config/**',
-        'node_modules/**',
+        // 'node_modules/**',
         'script/**',
         'test/**',
         '.bowerrc',
         '.gitignore',
         '.travis.yml',
         'README.md',
+        'package.json',
         'server.js'
     ];
 
