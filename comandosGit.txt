@@ -1,0 +1,25 @@
+git init
+git add .
+git commit -m "primeiro commit"
+curl -u dhiegohenrique https://api.github.com/user/repos -d '{"name":"contatooh"}'
+git remote add origin git@github.com:dhiegohenrique/contatooh.git
+git push origin master
+
+git remote set-url origin https://USERNAME@github.com/USERNAME/PROJECTNAME.git
+
+heroku login
+heroku auth:token
+travis setup heroku
+
+gerar nova chave:
+ssh-keygen -t rsa -b 4096 -C "dhiego_henrique20@yahoo.com.br"
+heroku keys:add
+
+git remote add heroku git@heroku.com:weatherconditions.git
+git push heroku HEAD:master
+heroku buildpacks:set heroku/nodejs
+
+heroku create weatherconditions
+git push heroku master
+
+heroku create --buildpack https://github.com/heroku/heroku-buildpack-nodejs.git
