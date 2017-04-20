@@ -17,7 +17,7 @@ before_script:
 - node server &
 - sleep 10
 script:
-# - karma start config/karma.config.js --single-run --browsers PhantomJS
+- karma start config/karma.config.js --single-run --browsers PhantomJS
 #before_deploy:
 #- gulp
 #- cd dist
