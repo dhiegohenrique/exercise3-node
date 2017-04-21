@@ -18,7 +18,7 @@
 <body ng-controller="weatherController" class="body">
     <div class="container">
         <div class="row">
-            <div class="col-xs-offset-10">
+            <div class="col-xs-6 col-sm-3 col-md-2 col-lg-2 col-xs-offset-6 col-sm-offset-9 col-md-offset-10 col-lg-offset-10">
                 <select id="language" ng-model="idLanguage" ng-options="language.id as language.name for language in languages" class="form-control" ng-change="changeLanguage()">
                 </select>
             </div>
@@ -29,7 +29,7 @@
         <a href="/">
             <div class="row jumbotron title shadow-5" style="background: url('resources/chuva-forte.png')">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <h2 class="text-center" translate="title"></h2>
+                    <h2 class="text-center no-padding" translate="title"></h2>
                 </div>
             </div>
         </a>
@@ -87,6 +87,7 @@
     <script src="vendor/moment/locale/es.js"></script>
     <script src="vendor/moment/locale/en-au.js"></script>
     <script src="vendor/angular-moment/angular-moment.min.js"></script>
+    <!--<script src="vendor/Flowtype.js/flowtype.js"></script>-->
     <!-- endbuild -->
     <script src="http://maps.google.com/maps/api/js?key=AIzaSyDkdIP05cgGoOTtSJKIiXYJqfzjV9BCCnE"></script>
 </body>
