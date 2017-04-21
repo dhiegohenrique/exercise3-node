@@ -16,10 +16,32 @@
 
 .title h2 {
     color: #fff;
-	font-size: 54px;
-	line-height: 59px;
 	padding: 0 19%;
 	text-transform: uppercase;
+}
+
+@media (max-width: 379px){
+    .title h2 {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 380px){
+    .title h2 {
+        font-size: 35px;
+    }
+}
+
+@media (min-width: 600px){
+    .title h2 {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 700px){
+    .title h2 {
+        font-size: 54px;
+    }
 }
 
 .equal {
