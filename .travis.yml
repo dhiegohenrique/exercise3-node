@@ -50,6 +50,8 @@ script:
 # before_deploy:
 # - gulp
 # - cd dist
+# - sudo apt-get install -y --force-yes heroku-toolbelt
+
 deploy:
   provider: heroku
   api_key: 5ef56961-7ec5-41ae-84e3-937a2caa4e8d
