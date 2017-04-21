@@ -27,6 +27,7 @@ script:
 - git add .
 - git commit -m "deploy no heroku"
 - wget 0- wget https://toolbelt.heroku.com/install-ubuntu.sh | sh
+- sudo ln -s /usr/local/heroku/bin/heroku /usr/bin/heroku
 - heroku create teste
 - git push heroku master
 #before_deploy:
