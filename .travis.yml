@@ -26,7 +26,7 @@ script:
 - git config user.email "dhiego_henrique20@yahoo.com.br"
 - git add .
 - git commit -m "deploy no heroku"
-- wget -0- wget https://toolbelt.heroku.com/install-ubuntu.sh | sh
+- wget 0- wget https://toolbelt.heroku.com/install-ubuntu.sh | sh
 - heroku create teste
 - git push heroku master
 #before_deploy:
