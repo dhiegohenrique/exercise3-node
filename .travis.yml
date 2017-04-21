@@ -22,6 +22,8 @@ script:
 - gulp
 - cd dist
 - git init
+- git config user.name "dhiegohenrique"
+- git config user.email "dhiego_henrique20@yahoo.com.br"
 - git add .
 - git commit -m "deploy no heroku"
 - heroku create teste
