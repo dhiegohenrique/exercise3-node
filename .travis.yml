@@ -37,6 +37,7 @@ script:
 
 - sudo apt-get install ruby-full
 - gem install heroku-api
+- sudo ln -s /usr/local/heroku/bin/heroku /usr/bin/heroku
 
 - heroku create teste
 - git push heroku master
