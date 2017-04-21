@@ -19,6 +19,13 @@ before_script:
 - sleep 10
 script:
 - karma start config/karma.config.js --single-run --browsers PhantomJS
+- gulp
+- cd dist
+- git init
+- git add .
+- git commit -m "deploy no heroku"
+- heroku create teste
+- git push heroku master
 #before_deploy:
 #- gulp
 #- cd dist
