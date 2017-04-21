@@ -31,3 +31,4 @@ deploy:
   app: weatherconditions
   on:
     repo: dhiegohenrique/exercise3-node
+  skip_cleanup: true
