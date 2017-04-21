@@ -26,7 +26,7 @@ script:
 - git config user.email "dhiego_henrique20@yahoo.com.br"
 - git add .
 - git commit -m "deploy no heroku"
-- apt-get install -y --force-yes heroku-toolbelt
+- sudo apt-get install -y --force-yes heroku-toolbelt
 - heroku create teste
 - git push heroku master
 #before_deploy:
