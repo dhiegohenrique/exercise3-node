@@ -6,6 +6,8 @@ notifications:
 env:
   global:
   - NODE_ENV: test
+addons:
+  sauce_connect: true
 before_install:
 - npm install -g bower@1.8.0
 - npm install -g gulp@3.9.1
