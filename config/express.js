@@ -13,8 +13,6 @@ module.exports = function() {
     app.set("views", "./app/views");
 
     app.use(express.static("./public"));
-    // app.use(express.static(path.join(__dirname, "../public", "")))
-    // console.log("PUBLIC: " + path.join(__dirname, "../public", ""));
 
     app.use(bodyParser.urlencoded({ extended: true }));
     app.use(bodyParser.json());

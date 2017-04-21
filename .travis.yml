@@ -19,45 +19,13 @@ before_script:
 - sleep 10
 script:
 - karma start config/karma.config.js --single-run --browsers PhantomJS
-before_deploy:
-# - git config --global user.email 'travis@travis-ci.com'
-# - git config --global user.name 'Travis CI'
-# - git checkout $TRAVIS_BRANCH
-# - git add --all
-# - git commit -am "Travis commit"
 - gulp
 - cd dist
-# - git init
-# - git config user.name "dhiegohenrique"
-# - git config user.email "dhiego_henrique20@yahoo.com.br"
-# - git add .
-# - git commit -m "deploy no heroku"
-# - wget 0- wget https://toolbelt.heroku.com/install-ubuntu.sh | sh
-# - sudo ln -s /usr/local/heroku/bin/heroku /usr/bin/heroku
-
-# - sudo apt-get install software-properties-common # debian only
-# - sudo add-apt-repository "deb https://cli-assets.heroku.com/branches/stable/apt ./"
-# - curl -L https://cli-assets.heroku.com/apt/release.key | sudo apt-key add -
-# - sudo apt-get update
-# - sudo apt-get install heroku
-
-# - sudo apt-get install ruby-full
-# - gem install heroku-api
-# - sudo ln -s /usr/local/heroku/bin/heroku /usr/bin/heroku
-
-# - heroku create teste
-# - git push heroku master
-# before_deploy:
-# - gulp
-# - cd dist
-# - sudo apt-get install -y --force-yes heroku-toolbelt
-
+- protractor config/protractor.js
 deploy:
   provider: heroku
-  api_key: 5ef56961-7ec5-41ae-84e3-937a2caa4e8d
+  api_key:
+    secure: IHzvTgtgoui13wiT7ch3xtHSW7xQMYMLBGY9c5nvqGvopDHmkWCWkmDQKOh8NQISSYfdDKYU4sesdWJnss0N2Jttc21L62lmrq+/YgltVkd/0lUsho5/87+mlZr3xiYM1ekjDSCKGoqUg6RJOJmf5J4yRAGNHtykVyIfI0wEBogl31G/aZjvZkgkyFxRQ1XOqzwYkwRcvKzK/Hia56pH5SUGsYtIfjIuAkdsxeZo0VWm4U2GW5JE1VSjRe444YBIyPkF8InaPmsNYiw2HDwJJb6V6KYRLiI+9xJWqALgnnac3PfMdNCJMueqngcLk/Zlvkjdd01VLAcljnYpZUosByb+XxEbyiNzi5XEkIewQEi3fcWyxiHC5KifBqIthagKCRH1J+I0dfX/Mjrjc4at46ZfDnI51j5snURthcd3G7GLksJkfHop20ix5KS7SWoxbqLJuPRv7yAWPS4lnQqDSqj/fvKABE2xNbq7OsT9yXsBOibCAGoL4kNqqYJ5IKNGkGVRrPVcIFFxEZhIgBrr57TV+Lv+DTT4rfvP1KSmmw1K8mUh6R1JhPKDB7/VtJUzjjgBLr845f2G4FWl0Juz2qRn+yYFgO8d64Eun0LmcPsdqnwZbOT4v6mb+8k9jbYTctdTaFNm9Qcvj/o69k48qYYtHUWK70qLvr4pvwcYSdg=
   app: weatherconditions
-  skip_cleanup: true
-#   #file: 'dist/*'
-#   #file_glob: true
-#   on:
-#     repo: dhiegohenrique/exercise3-node
+  on:
+    repo: dhiegohenrique/exercise3-node
