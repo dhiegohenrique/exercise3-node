@@ -28,11 +28,14 @@ script:
 - git commit -m "deploy no heroku"
 # - wget 0- wget https://toolbelt.heroku.com/install-ubuntu.sh | sh
 # - sudo ln -s /usr/local/heroku/bin/heroku /usr/bin/heroku
-- sudo apt-get install software-properties-common # debian only
-- sudo add-apt-repository "deb https://cli-assets.heroku.com/branches/stable/apt ./"
-- curl -L https://cli-assets.heroku.com/apt/release.key | sudo apt-key add -
-- sudo apt-get update
-- sudo apt-get install heroku
+
+# - sudo apt-get install software-properties-common # debian only
+# - sudo add-apt-repository "deb https://cli-assets.heroku.com/branches/stable/apt ./"
+# - curl -L https://cli-assets.heroku.com/apt/release.key | sudo apt-key add -
+# - sudo apt-get update
+# - sudo apt-get install heroku
+
+- sudo apt-get install ruby-full
 
 - heroku create teste
 - git push heroku master
