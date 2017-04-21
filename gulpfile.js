@@ -9,8 +9,6 @@ var jsonMinify = require('gulp-json-minify');
 var gulpCopy = require('gulp-copy');
 var ngAnnotate = require('gulp-ng-annotate');
 var htmlreplace = require('gulp-html-replace');
-var deploySlug = require('gulp-heroku-deploy-slug');
-var herokuSourceDeployer = require('gulp-heroku-source-deployer');
 
 gulp.task('clean', function () {
 	return gulp.src('dist')
@@ -124,16 +122,6 @@ gulp.task('copyProject', function() {
     return gulp.src(sources)
         .pipe(gulpCopy('dist', { prefix: 0 }));
 });
-
-gulp.task('deploy', function() {
-    var apiKey = '5ef56961-7ec5-41ae-84e3-937a2caa4e8d';
-    var appName = 'weatherconditions';
-
-    return gulp.src('dist/**')
-        .pipe(gzip())
-        .pipe(herokuSourceDeployer.deploy(apiKey, appName));
-});
-
 
 gulp.task('default', function(callBack) {
     return runSequence('clean', ['uglify', 'htmlmin', 'cssmin', 'jsonMinify', 'copyFontAwesome', 'copyFontOw', 'copyResources', 'copyProject', 'htmlreplace'], callBack);
