@@ -11,6 +11,8 @@ heroku login
 heroku auth:token
 travis setup heroku
 
+heroku run bash -a my-app
+
 gerar nova chave:
 ssh-keygen -t rsa -b 4096 -C "dhiego_henrique20@yahoo.com.br"
 heroku keys:add
