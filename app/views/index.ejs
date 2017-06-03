@@ -38,7 +38,7 @@
             <form name="cityForm" novalidate ng-submit="submitForm(cityForm.$valid)">
                 <div class="col-xs-12 col-sm-12 col-md-11 col-lg-11 no-padding">
                     <input type="text" class="form-control" placeholder="{{ 'searchPlaceholder' | translate }}" ng-model="city"
-                    required ng-disabled="spinner" name="name">
+                    required ng-disabled="spinner" name="name" ng-keypress="">
                 </div>
 
                 <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 no-padding">
