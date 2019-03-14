@@ -22,7 +22,7 @@ script:
 - karma start config/karma.config.js --single-run --browsers PhantomJS
 - gulp
 - cd dist
-- protractor config/protractor.js
+# - protractor config/protractor.js
 deploy:
   provider: heroku
   api_key:
